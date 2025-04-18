@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Phoenix DaPzzz | Design & Internet Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="phoenix-loader">
+            <div class="flame"></div>
+            <div class="flame"></div>
+            <div class="flame"></div>
+            <div class="bird"></div>
+        </div>
+    </div>
+
+    <!-- Floating Navigation -->
+    <nav class="floating-nav">
+        <div class="nav-logo">
+            <span class="ap-logo">AP</span>
+            <span class="dapzzz-logo">DaPzzz</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#cafe">Internet Café</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="animated-text">Igniting <span class="highlight">Creative</span> Solutions</h1>
+            <p class="subtext">Alpha Phoenix DaPzzz - Where design meets innovation and technology fuels creativity</p>
+            <div class="cta-buttons">
+                <a href="#services" class="btn btn-primary pulse">Explore Services</a>
+                <a href="#contact" class="btn btn-secondary">Get Started</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="floating-elements">
+                <div class="element design-tool" data-tool="Photoshop"></div>
+                <div class="element design-tool" data-tool="Illustrator"></div>
+                <div class="element coffee-cup"></div>
+                <div class="element t-shirt"></div>
+                <div class="element business-plan"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="section-header">
+            <h2>Our <span class="highlight">Services</span></h2>
+            <p>Comprehensive solutions for your digital and physical needs</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card" data-service="design">
+                <div class="card-icon">
+                    <i class="fas fa-pencil-ruler"></i>
+                </div>
+                <h3>Website & Graphic Design</h3>
+                <p>Stunning digital experiences that captivate your audience and reflect your brand identity.</p>
+                <div class="card-cta">Learn More <i class="fas fa-arrow-right"></i></div>
+            </div>
+            <div class="service-card" data-service="branding">
+                <div class="card-icon">
+                    <i class="fas fa-trademark"></i>
+                </div>
+                <h3>Brand Development</h3>
+                <p>Comprehensive branding solutions from logo design to complete brand guidelines.</p>
+                <div class="card-cta">Learn More <i class="fas fa-arrow-right"></i></div>
+            </div>
+            <div class="service-card" data-service="business">
+                <div class="card-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Business Plan Assistance</h3>
+                <p>Strategic planning and documentation to help launch or grow your business.</p>
+                <div class="card-cta">Learn More <i class="fas fa-arrow-right"></i></div>
+            </div>
+            <div class="service-card" data-service="print">
+                <div class="card-icon">
+                    <i class="fas fa-tshirt"></i>
+                </div>
+                <h3>Print & Apparel Design</h3>
+                <p>Custom clothing and print materials that make your brand stand out.</p>
+                <div class="card-cta">Learn More <i class="fas fa-arrow-right"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internet Café Section -->
+    <section id="cafe" class="cafe-section">
+        <div class="cafe-content">
+            <h2>DaPzzz <span class="highlight">Internet Café</span></h2>
+            <p>A creative hub where you can work, design, and connect with high-speed internet and premium workstations.</p>
+            <div class="cafe-features">
+                <div class="feature">
+                    <i class="fas fa-wifi"></i>
+                    <span>High-Speed Internet</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-print"></i>
+                    <span>Printing Services</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-coffee"></i>
+                    <span>Refreshments</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-desktop"></i>
+                    <span>Computer Access</span>
+                </div>
+            </div>
+            <a href="#" class="btn btn-primary">View Café Hours</a>
+        </div>
+        <div class="cafe-slider">
+            <div class="slider-container">
+                <div class="slide active" data-slide="1"></div>
+                <div class="slide" data-slide="2"></div>
+                <div class="slide" data-slide="3"></div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="section-header">
+            <h2>Our <span class="highlight">Work</span></h2>
+            <p>See what we've created for our amazing clients</p>
+        </div>
+        <div class="portfolio-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web Design</button>
+            <button class="filter-btn" data-filter="brand">Branding</button>
+            <button class="filter-btn" data-filter="apparel">Apparel</button>
+            <button class="filter-btn" data-filter="print">Print</button>
+        </div>
+        <div class="portfolio-grid">
+            <!-- Items will be loaded via JavaScript -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-form">
+            <h2>Get in <span class="highlight">Touch</span></h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <select id="service" required>
+                        <option value="" disabled selected>Select a Service</option>
+                        <option value="web">Website Design</option>
+                        <option value="brand">Branding</option>
+                        <option value="business">Business Plan</option>
+                        <option value="print">Print/Apparel</option>
+                        <option value="cafe">Internet Café</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <div class="info-card">
+                <h3>Visit Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 street,Newcastle city</p>
+                <p><i class="fas fa-phone"></i> 081 363 7423</p>
+                <p><i class="fas fa-envelope"></i> alphaphoenpack@gmail.com</p>
+            </div>
+            <div class="info-card">
+                <h3>Café Hours</h3>
+                <p>Monday - Friday: 8am - 9pm</p>
+                <p>Saturday: 9am - 8pm</p>
+                <p>Sunday: 10am - 6pm</p>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-behance"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="ap-logo">AP</span>
+                <span class="dapzzz-logo">DaPzzz</span>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Services</h4>
+                    <a href="#">Web Design</a>
+                    <a href="#">Branding</a>
+                    <a href="#">Business Plans</a>
+                    <a href="#">Print/Apparel</a>
+                </div>
+                <div class="link-group">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Team</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Blog</a>
+                </div>
+                <div class="link-group">
+                    <h4>Internet Café</h4>
+                    <a href="#">Hours</a>
+                    <a href="#">Services</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Events</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Alpha Phoenix DaPzzz. All rights reserved.</p>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+<!-- AI Chatbot Widget -->
+<div class="ai-chatbot-widget">
+    <div class="robot-head" id="robotHead">
+        <div class="face">
+            <div class="eyes">
+                <div class="eye left"></div>
+                <div class="eye right"></div>
+            </div>
+            <div class="mouth"></div>
+        </div>
+    </div>
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header">
+            <h3>AP DaPzzz</h3>
+            <button class="close-chat">×</button>
+        </div>
+        <div class="chat-messages" id="chatMessages"></div>
+        <div class="chat-input">
+            <input type="text" id="userMessage" placeholder="Ask me anything...">
+            <button id="sendMessage"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
