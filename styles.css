@@ -577,17 +577,46 @@ h1, h2, h3, h4 {
 .slide.active {
     opacity: 1;
 }
+.cafe-slider {
+    position: relative;
+    min-height: 300px; /* Ensure space even if images fail */
+    background: #f5f5f5; /* Fallback color */
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* Add loading state */
+.slide::after {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #666;
+}
 
 .slide:nth-child(1) {
     background-image: url('https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
 }
 
 .slide:nth-child(2) {
-    background-image: url('https://images.unsplash.com/photo-1518458028785-8fbcd101ebb9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-image: url('computers.jpg');
 }
 
 .slide:nth-child(3) {
-    background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-image: url('e-com.jpg');
 }
 
 .slider-controls {
@@ -1088,10 +1117,9 @@ h1, h2, h3, h4 {
 
 .chat-container {
     position: absolute;
-    bottom: 100px;
-    right: 0;
-    width: 350px;
-    height: 500px;
+    
+   
+   
     background: white;
     border-radius: 15px;
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
@@ -1099,7 +1127,37 @@ h1, h2, h3, h4 {
     flex-direction: column;
     overflow: hidden;
 }
+/* In your existing chatbot styles, add/modify: */
+.chat-container {
+    width: 95vw; /* Changed from fixed 350px */
+    max-width: 350px; /* Maximum size on larger screens */
+    height: 70vh; /* Relative to viewport */
+    max-height: 500px;
+    right: 2.5vw; /* Responsive positioning */
+    bottom: 100px;
+}
 
+/* Mobile-specific adjustments */
+@media (max-width: 480px) {
+    .chat-container {
+        height: 60vh;
+        bottom: 80px;
+    }
+    
+    .robot-head {
+        width: 60px;
+        height: 60px;
+        right: 20px;
+        bottom: 20px;
+    }
+    
+    .robot-head::before {
+        font-size: 10px;
+        white-space: normal;
+        width: max-content;
+        max-width: 100px;
+    }
+}
 .chat-header {
     background: linear-gradient(135deg, #6e48aa, #9d50bb);
     color: white;

@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const portfolioItems = [
         { category: 'web', title: 'E-commerce Website', image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80' },
         { category: 'brand', title: 'Coffee Brand', image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80' },
-        { category: 'apparel', title: 'Streetwear Collection', image: 'https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80' },
+        { category: 'apparel', title: 'Streetwear Collection', image: 'ts-edited.jpg' },
         { category: 'print', title: 'Business Cards', image: 'https://images.unsplash.com/photo-1544931170-3ca1337cce88?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80' },
         { category: 'web', title: 'Portfolio Website', image: 'https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80' },
         { category: 'brand', title: 'Restaurant Branding', image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80' }

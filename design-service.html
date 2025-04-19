@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Services | Alpha Phoenix DaPzzz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <!-- Floating Navigation Panel -->
+    <div class="service-panel">
+        <div class="panel-btn" onclick="window.location.href='index.html'">
+            <i class="fas fa-arrow-left"></i>
+            <span class="tooltip">Back to Home</span>
+        </div>
+        <div class="panel-btn active" data-section="portfolio">
+            <i class="fas fa-home"></i>
+            <span class="tooltip">Home</span>
+        </div>
+        <div class="panel-btn" data-section="ai-assistant">
+            <i class="fas fa-robot"></i>
+            <span class="tooltip">AI Assistant</span>
+        </div>
+        <div class="panel-btn" data-section="store">
+            <i class="fas fa-store"></i>
+            <span class="tooltip">Design Store</span>
+        </div>
+        <div class="panel-btn" data-section="seller">
+            <i class="fas fa-user-tie"></i>
+            <span class="tooltip">Become Seller</span>
+        </div>
+    </div>
+
+    <main class="design-service-container">
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section-content">
+            <h1 class="animated">Our Creative Portfolio</h1>
+            <p class="animated delay-1">Explore our premium designs across all services</p>
+            
+            <!-- Filter Buttons -->
+            <div class="filter-buttons animated delay-1">
+                <button class="filter-btn active" data-filter="all">All Work</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="clothing">Clothing</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="print">Print | Paint</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- Items will be loaded via JavaScript -->
+            </div>
+        </section>
+
+        <!-- AI Assistant Section (Hidden by default) -->
+        <section id="ai-assistant" class="section-content" style="display: none;">
+            <div class="ai-assistant-container animated">
+                <h2>Design Assistant</h2>
+                <p>Select what you need help with:</p>
+                
+                <div class="ai-options">
+                    <div class="ai-option" data-service="web-design">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Website Design</h3>
+                    </div>
+                    <div class="ai-option" data-service="clothing-design">
+                        <i class="fas fa-tshirt"></i>
+                        <h3>Clothing Design</h3>
+                    </div>
+                    <div class="ai-option" data-service="branding">
+                        <i class="fas fa-trademark"></i>
+                        <h3>Brand Identity</h3>
+                    </div>
+                    <div class="ai-option" data-service="print">
+                        <i class="fas fa-print"></i>
+                        <h3>Print Materials</h3>
+                    </div>
+                </div>
+                
+                <div class="ai-chat-container">
+                    <div class="chat-messages" id="aiChatMessages">
+                        <div class="message bot-message">
+                            Hello! I'm DaPzzz AI Assistant. Please select a service above to begin.
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                        <button class="attachment-btn">
+                            <i class="fas fa-paperclip"></i>
+                            <input type="file" id="fileUpload" style="display: none;">
+                        </button>
+                        <input type="text" id="aiUserInput" placeholder="Type your message...">
+                        <button id="aiSendBtn"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seller Section -->
+        <section id="seller" class="section-content" style="display: none;">
+            <div class="seller-form-container animated">
+                <div class="auth-tabs">
+                    <button class="auth-tab active" data-tab="register">Register</button>
+                    <button class="auth-tab" data-tab="login">Sign In</button>
+                </div>
+                
+                <!-- Registration Form -->
+                <form id="registerForm" class="seller-form auth-form">
+                    <h3>Create Seller Account</h3>
+                    
+                    <div class="social-auth">
+                        <button type="button" class="google-auth">
+                            <i class="fab fa-google"></i> Sign up with Google
+                        </button>
+                    </div>
+                    
+                    <div class="form-divider">
+                        <span>or use email</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" placeholder="Full Name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="password" placeholder="Create Password" required>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+                
+                <!-- Login Form (Hidden by default) -->
+                <form id="loginForm" class="seller-form auth-form" style="display: none;">
+                    <h3>Welcome Back</h3>
+                    
+                    <div class="social-auth">
+                        <button type="button" class="google-auth">
+                            <i class="fab fa-google"></i> Sign in with Google
+                        </button>
+                    </div>
+                    
+                    <div class="form-divider">
+                        <span>or use email</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Sign In</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="design-service.js"></script>
+</body>
+</html>
