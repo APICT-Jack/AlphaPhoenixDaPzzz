@@ -5,7 +5,7 @@ const portfolioItems = [
         title: "E-commerce Website",
         category: "web",
         description: "Complete online store with product management",
-        price: "$149.99",
+        price: "R1,500 - R10,000",
         image: "https://images.unsplash.com/photo-1517705008128-361805f42e86?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
     },
     {
@@ -13,23 +13,24 @@ const portfolioItems = [
         title: "Business Portfolio",
         category: "web",
         description: "Professional showcase for your work",
-        price: "$99.99",
-        image: "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+        price: "R800 - R50,000",
+        image: "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+       
     },
     {
         id: 3,
         title: "Urban Streetwear Collection",
         category: "clothing",
         description: "Modern urban clothing designs",
-        price: "$29.99 - $59.99",
-        image: "grls.png"
+        price: "R50 - R500",
+        image: "grls.jpg"
     },
     {
         id: 4,
         title: "Corporate Branding Package",
         category: "branding",
         description: "Complete brand identity solution",
-        price: "$199.99",
+        price: "R5 000 - R50 000",
         image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
     },
     {
@@ -44,41 +45,49 @@ const portfolioItems = [
         id: 7,
         title: "Print Cap Designs",
         category: "print",
-        description: "Personalized t-shirt printing",
+        description: "Personalized cap printing",
         price: "R124.99",
-        image: "cap.png"
+        image: "cap.jpg"
     },
     {
         id: 6,
-        title: "Business Jeans Designs",
+        title: "Lable Jeans Designs",
         category: "print",
         description: "Premium print templates",
-        price: "$49.99",
-        image: "jeans.png"
+        price: "R50 - R700",
+        image: "jeans.jpg"
     },
     {
         id: 6,
         title: "Print Your owne Designs",
         category: "print",
-        description: "Premium print templates",
-        price: "$49.99",
+        description: "Premium t-shirt print templates",
+        price: "R50 - R 900",
         image: "ts-edited.jpg"
     },
     {
         id: 6,
         title: "Paint DM Jackat Designs",
         category: "print",
-        description: "Premium print templates",
-        price: "$49.99",
+        description: "Mark your Clothers with your desire painting design",
+        price: "R100 - R1,500",
         image: "dj.jpg"
     },
     {
         id: 6,
         title: "Paint T-Shirt Designs",
         category: "print",
-        description: "Premium print templates",
-        price: "$49.99",
+        description: "Mark your Clothers with your desire painting design",
+        price: "R20 - R1,500",
         image: "sbb.jpg"
+    },
+    {
+        id: 6,
+        title: "Paint T-Shirt Designs",
+        category: "print",
+        description: "Mark your Clothers with your desire painting design",
+        price: "R20 - R1,500",
+        image: "pt.jpg"
     }
 ];
 
