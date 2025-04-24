@@ -39,7 +39,7 @@ const portfolioItems = [
         category: "print",
         description: "Personalized t-shirt printing",
         price: "R124.99",
-        image: "box.png"
+        image: "box.jpg"
     },
     {
         id: 7,
